@@ -1,5 +1,6 @@
 import abstractFactory.BuildCharacter;
 import abstractFactory.DarkPunkCharacter;
+import builder.CheckerBuilder;
 import prototype.AnimalHusbandry;
 import singleton.CheckerSingleton;
 
@@ -28,6 +29,9 @@ public class Main {
 
         CheckerSingleton checkerSingleton=new CheckerSingleton();
         checkerSingleton.check();
+
+        CheckerBuilder checkerBuilder=new CheckerBuilder();
+        checkerBuilder.check();
 
     }
 }
