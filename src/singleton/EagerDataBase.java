@@ -2,16 +2,12 @@ package singleton;
 
 public class EagerDataBase {
 
-    private static EagerDataBase eagerDataBase=new EagerDataBase();
+    private EagerDataBase(){}
+    //    Eager Loading
+    private static EagerDataBase dataBase = new EagerDataBase();
 
-    public static EagerDataBase getEagerDataBase(){
-        return eagerDataBase;
+    public static EagerDataBase getDatabase() {
+        return dataBase;
+
     }
-
-/*
-
-1 static variable wiil initialise object at time of class loading
-
-
- */
 }
