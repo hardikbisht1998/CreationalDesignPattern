@@ -1,6 +1,6 @@
 import abstractFactory.BuildCharacter;
 import abstractFactory.DarkPunkCharacter;
-import factory.Reviewer;
+import prototype.AnimalHusbandry;
 
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -15,8 +15,12 @@ public class Main {
 //            System.out.println("Try Again");
 //        }
 
-        BuildCharacter buildCharacter=new BuildCharacter(new DarkPunkCharacter());
-        buildCharacter.showSetting();
+//        BuildCharacter buildCharacter=new BuildCharacter(new DarkPunkCharacter());
+//        buildCharacter.showSetting();
+
+        AnimalHusbandry animalHusbandry=new AnimalHusbandry();
+        animalHusbandry.add();
+        animalHusbandry.status();
 
     }
 }
